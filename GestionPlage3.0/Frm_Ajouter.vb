@@ -147,22 +147,6 @@ Public Class Frm_Ajouter
             myReader.Close()
             myConn.Close()
 
-
-            '--------------------------------
-            ' recupérer le dernier index de la table Nature_Terrain pour le mettre dans la table EST_COMPOSE_DE
-
-            myConn = New SqlConnection(machainedeconnexion)
-
-            myCmd = myConn.CreateCommand
-            myCmd.CommandText = "Insert into EST_COMPOSE_DE values ('" & temp(0) & "')"
-
-            myConn.Open()
-            myReader = myCmd.ExecuteReader()
-
-            myReader.Close()
-            myConn.Close()
-
-
             MsgBox("La nature du terrain " & TxtSaisie.Text & " a été ajoutée avec succès")
 
         End If
