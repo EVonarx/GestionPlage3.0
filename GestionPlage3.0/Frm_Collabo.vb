@@ -83,13 +83,6 @@ Public Class Frm_Collabo
 
         Dim i As Integer = 0
 
-        If (myReader.Read()) Then
-            Temp_ID_Region(i) = myReader.GetDecimal(0)
-            Txt_Region.Text = myReader.GetString(2)
-            i += 1
-        End If
-
-
 
         Do While myReader.Read()
             Temp_ID_Region(i) = myReader.GetDecimal(0)

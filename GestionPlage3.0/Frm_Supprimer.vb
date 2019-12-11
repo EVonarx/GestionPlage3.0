@@ -65,7 +65,7 @@ Public Class Frm_Supprimer
             If SuppressionPossible("SELECT * FROM REGION WHERE ID_RESPONSABLE = ") Then
                 result = Supprimer("DELETE FROM RESPONSABLE WHERE ID_RESPONSABLE = ")
 
-                If (result = -1) Then
+                If (result = 1) Then
                     MsgBox("Le responsable " & Temp_ID1 & " a été supprimé avec succès")
                 Else
                     MsgBox("ERROR - Le responsable " & Temp_ID1 & " n'a pas été supprimé !!!!!!!")
@@ -86,7 +86,7 @@ Public Class Frm_Supprimer
             If SuppressionPossible("SELECT * FROM DEPARTEMENT WHERE ID_REGION = ") Then
                 result = Supprimer("DELETE FROM REGION WHERE ID_REGION = ")
 
-                If (result = -1) Then
+                If (result = 1) Then
                     MsgBox("La région " & Temp_ID1 & " a été supprimée avec succès")
                 Else
                     MsgBox("ERROR - La région " & Temp_ID1 & " n'a pas été supprimée !!!!!!!")
@@ -100,7 +100,7 @@ Public Class Frm_Supprimer
             If SuppressionPossible("SELECT * FROM VILLE WHERE ID_DEPARTEMENT = ") Then
                 result = Supprimer("DELETE FROM DEPARTEMENT WHERE ID_DEPARTEMENT = ")
 
-                If (result = -1) Then
+                If (result = 1) Then
                     MsgBox("Le département " & Temp_ID1 & " a été supprimé avec succès")
                 Else
                     MsgBox("ERROR - Le département " & Temp_ID1 & " n'a pas été supprimé !!!!!!!")
@@ -114,7 +114,7 @@ Public Class Frm_Supprimer
             If SuppressionPossible("SELECT * FROM PLAGE WHERE ID_VILLE = ") Then
                 result = Supprimer("DELETE FROM VILLE WHERE ID_VILLE = ")
 
-                If (result = -1) Then
+                If (result = 1) Then
                     MsgBox("La ville " & Temp_ID1 & " a été supprimée avec succès")
                 Else
                     MsgBox("ERROR - La ville " & Temp_ID1 & " n'a pas été supprimée !!!!!!!")

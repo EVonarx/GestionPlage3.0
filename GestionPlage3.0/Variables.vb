@@ -6,8 +6,8 @@ Module Variables
     Public myCmd As SqlCommand
     Public myReader As SqlDataReader
     Public results As String
-    Public machainedeconnexion = "Initial Catalog=GestionPlage3.0;Data Source=DESKTOP-ERIC\SQLEXPRESS;Integrated Security=SSPI;"
-
+    'Public machainedeconnexion = "Initial Catalog=GestionPlage3.0;Data Source=DESKTOP-ERIC\SQLEXPRESS;Integrated Security=SSPI;"
+    Public machainedeconnexion = "Initial Catalog=GestionPlage3.1;Data Source=PC-CDA03;Integrated Security=SSPI;"
     Public ParamAjouter As String
 
 End Module
